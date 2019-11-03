@@ -1,2 +1,2 @@
 # LevelUp
-Sites feitos para o curso LevelUp da PUCMG
+Sites feitos para o curso "LevelUp" da PUCMG
