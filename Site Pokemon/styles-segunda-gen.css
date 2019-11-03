@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cabecalho"
+                        "titulo"
+                        "hist"
+                        "ini"
+                        "gym"
+                        "reg"
+                        "bat"
+                        ;
+    grid-gap: 5px 5px;
+    
+}
+#historia{
+    grid-area: hist;
+}
+ #iniciais{
+    grid-area: ini;
+}
+#ginasios{
+    grid-area: gym;
+}
+#regiao{
+     grid-area: reg;
+}
+#batalhas{
+    grid-area: bat;
+}
+header{
+    grid-area: cabecalho;
+    position: relative;
+    float:left;
+    width:100%;
+    height: 200px;
+    background-size: cover;
+    background-image : url(banner.jpg);
+}
+.logo{
+    width: 200px;
+    position: absolute;
+    margin-top: 85px;
+    float: center;
+}
+
+#map{
+    width :70%;
+}
+#battle{
+    width: 100%;
+}
+#title{
+    text-align: center;
+    grid-area: titulo;
+}
+.sec_img{
+    width:100%;
+}
+.sec2_img{
+    width:50%;
+}
+
+#historia{
+    grid-area: hist;
+}
+ #iniciais{
+    grid-area: ini;
+}
+#ginasios{
+    grid-area: gym;
+}
+#regiao{
+     grid-area: reg;
+}
+#batalhas{
+    grid-area: bat;
+}
+
+@media screen and (min-width: 400px){
+    .logo{
+        width: 300px;
+        position: absolute;
+        margin-top: 70px;
+    }
+}
+@media (min-width: 990px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 60px 1fr 1fr;
+        grid-template-areas: "cabecalho cabecalho cabecalho cabecalho cabecalho cabecalho"
+                            "titulo titulo titulo titulo titulo titulo"
+                            "hist hist ini ini gym gym"
+                            "reg reg reg bat bat bat"
+                            ;
+        grid-gap: 5px 0px;
+        
+    }
+}
